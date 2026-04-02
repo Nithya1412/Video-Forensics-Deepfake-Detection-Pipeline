@@ -1,0 +1,73 @@
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ──────────────────────────────────
+.env
+.venv
+venv/
+env/
+
+# ── Jupyter ───────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Model Weights (large binary — use Git LFS if needed) ──
+outputs/checkpoints/*.pt
+outputs/checkpoints/*.pth
+outputs/checkpoints/*.pkl
+!outputs/checkpoints/.gitkeep
+
+# ── Dataset frames & videos (too large for git) ───────────
+data/frames/
+data/videos/
+data/raw/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.h5
+*.hdf5
+!docs/**/*.png
+
+# ── Output files ─────────────────────────────────────────
+outputs/predictions/*.csv
+outputs/logs/
+outputs/*.json
+!outputs/checkpoints/.gitkeep
+!outputs/predictions/.gitkeep
+
+# ── TensorBoard / MLflow ──────────────────────────────────
+runs/
+mlruns/
+wandb/
+outputs/*/tb/
+
+# ── IDE ───────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ── Testing ───────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Misc ─────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+.cache/
+tmp/
